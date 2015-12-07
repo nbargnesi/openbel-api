@@ -14,6 +14,7 @@ require 'app/util'
 require 'rack/cors'
 
 require 'sinatra/base'
+require 'omniauth'
 require 'app/routes/base'
 require 'app/routes/root'
 require 'app/routes/annotations'
@@ -57,6 +58,8 @@ module OpenBEL
       end
     end
     disable :protection
+
+    use OmniAuth::Strategies::Developer
 
     use OpenBEL::Routes::Root
     use OpenBEL::Routes::Annotations
