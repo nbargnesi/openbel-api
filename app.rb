@@ -56,7 +56,7 @@ module OpenBEL
     end
     disable :protection
 
-    use OmniAuth::Strategies::Developer
+    #use OmniAuth::Strategies::Developer
 
     use OpenBEL::Routes::Root
     use OpenBEL::Routes::Annotations

@@ -21,6 +21,9 @@ gem 'sinatra'
 gem 'sinatra-advanced-routes',            :require => 'sinatra/advanced_routes'
 gem 'sinatra-contrib'
 gem 'sqlite3'
+gem 'omniauth',                '~> 1.2'
+gem 'omniauth-auth0',          '~> 1.4'
+gem 'omniauth-github',         '~> 1.1.2'
 
 # Needed for BEL::RDF bel.rb plugin. Used in /api/expressions/{bel}/components
 gem 'addressable'
